@@ -5,17 +5,17 @@
 		<!-- css and scripts for the tap navigaton bar -->
 		<template id="assets_frontend" inherit_id="website.assets_frontend" name="Nav Bar Assets">
 			<xpath expr="." position="inside">
-				<link rel="stylesheet" href='/bp_snippet_tap_navigation/static/src/css/normalize.css' t-ignore="true" />
-				<link rel="stylesheet" href='/bp_snippet_tap_navigation/static/src/css/main.css' t-ignore="true" />
-				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/tab_nav_selector.js"></script>
-				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/modernizr.custom.js"></script>
-				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/tab_nav.js"></script>
+				<link rel="stylesheet" href='/bp_snippet_tab_navigation/static/src/css/normalize.css' t-ignore="true" />
+				<link rel="stylesheet" href='/bp_snippet_tab_navigation/static/src/css/main.css' t-ignore="true" />
+				<script type="text/javascript" src="/bp_snippet_tab_navigation/static/src/js/tab_nav_selector.js"></script>
+				<script type="text/javascript" src="/bp_snippet_tab_navigation/static/src/js/modernizr.custom.js"></script>
+				<script type="text/javascript" src="/bp_snippet_tab_navigation/static/src/js/tab_nav.js"></script>
 			</xpath>
 		</template>
 
 		<template id="assets_editor" inherit_id="website.assets_editor" name="assets for nav bar snippet">
 			<xpath expr="." position="inside">
-				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/tab_nav_selector.editor.js"></script>
+				<script type="text/javascript" src="/bp_snippet_tab_navigation/static/src/js/tab_nav_selector.editor.js"></script>
 			</xpath>
 		</template>
 
@@ -23,7 +23,7 @@
 			<xpath expr="//div[@id='snippet_structure']" position="inside">
 				<div>
 					<div class="oe_snippet_thumbnail">
-						<img class="oe_snippet_thumbnail_img" src="/bp_snippet_tap_navigation/static/src/img/menu_snippet.jpeg" />
+						<img class="oe_snippet_thumbnail_img" src="/bp_snippet_tab_navigation/static/src/img/menu_snippet.jpeg" />
 						<span class="oe_snippet_thumbnail_title">Nav Bar</span>
 					</div>
 					<section class="oe_snippet_body mb32 tabs tabs-style-bar tab-navigation js_navbar">
