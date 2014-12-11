@@ -1,0 +1,43 @@
+/*****************************/
+/* Underline */
+/*****************************/
+
+.tabs-style-underline
+  nav
+    background: #fff
+
+
+    a
+      padding: 0.25rem 0 0.5rem
+      border-left: 1px solid #e7ecea
+      -webkit-transition: color 0.2s
+      transition: color 0.2s
+
+      span
+        font-weight: 700
+
+
+    li:last-child
+      a
+        border-right: 1px solid #e7ecea
+
+    li
+      a::after
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        height: 6px
+        background: #428bca
+        content: ''
+        -webkit-transition: -webkit-transform 0.3s
+        transition: transform 0.3s
+        -webkit-transform: translate3d(0,150%,0)
+        transform: translate3d(0,150%,0)
+
+    li.tab-current
+      a::after
+        -webkit-transform: translate3d(0,0,0)
+        transform: translate3d(0,0,0)
+
+

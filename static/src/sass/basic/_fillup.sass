@@ -1,0 +1,77 @@
+/*****************************/
+/* Fill up */
+/*****************************/
+
+.tabs-style-fillup
+  nav
+    ul
+      li
+        transform: translate3d(0,100%,0)
+        a
+          padding: 1.9rem 0
+          border-right: 1px solid #428bca
+          line-height: 1
+          -webkit-transition: color 0.3s
+          transition: color 0.3s
+          -webkit-backface-visibility: hidden
+          backface-visibility: hidden
+          span
+            -webkit-transition: -webkit-transform 0.5s
+            transition: transform 0.5s
+            -webkit-transform: translate3d(0,5px,0)
+            transform: translate3d(0,5px,0)
+            display: block
+            font-weight: 700
+            font-size: 2rem
+            line-height: 1.5
+
+        a::after
+          position: absolute
+          top: 0
+          left: 0
+          z-index: -1
+          width: 100%
+          height: 100%
+          height: calc(100% + 1px)
+          border: 1px solid #428bca
+          background: #428bca
+          content: ''
+          -webkit-transition: -webkit-transform 0.3s
+          transition: transform 0.3s
+          -webkit-transform: translate3d(0,100%,0)
+
+      li:last-child
+        a
+          border: none
+
+
+      li.tab-current
+        z-index: 100
+        a
+          color: #fff
+          span
+            -webkit-transform: translate3d(0,-10px,0)
+            transform: translate3d(0,-10px,0)
+
+        a::after
+          -webkit-transform: translate3d(0,0,0)
+          transform: translate3d(0,0,0)
+
+
+
+
+  .fa::before
+    -webkit-transition: -webkit-transform 0.5s
+    transition: transform 0.5s
+    -webkit-transform: translate3d(0,5px,0)
+    transform: translate3d(0,5px,0)
+    display: block
+    margin: 0
+
+
+  li.tab-current
+    .fa::before
+      -webkit-transform: translate3d(0,-10px,0)
+      transform: translate3d(0,-10px,0)
+
+

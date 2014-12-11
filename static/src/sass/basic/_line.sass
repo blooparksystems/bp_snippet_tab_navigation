@@ -1,0 +1,48 @@
+/*****************************/
+/* Line */
+/*****************************/
+
+.tabs-style-line
+  nav
+    ul
+      padding: 0 2rem
+      max-width: none
+      box-shadow: inset 0 -2px #d1d3d2
+
+
+    a
+      padding: 0.7rem 0.4rem
+      box-shadow: inset 0 -2px #d1d3d2
+      color: #74777b
+      text-align: left
+      text-transform: uppercase
+      letter-spacing: 1px
+      font-weight: 700
+      font-size: 2rem
+      line-height: 1
+      -webkit-transition: color 0.3s, box-shadow 0.3s
+      transition: color 0.3s, box-shadow 0.3s
+
+
+    a:hover
+      box-shadow: inset 0 -2px #74777b
+    a:focus
+      box-shadow: inset 0 -2px #74777b
+
+
+    li.tab-current
+      a
+        box-shadow: inset 0 -2px #428bca
+        color: #428bca
+
+@media screen and (max-width: 58em)
+  .tabs-style-line
+    nav
+      ul
+        display: block
+        box-shadow: none
+
+        li
+          display: block
+          -webkit-flex: none
+          flex: none

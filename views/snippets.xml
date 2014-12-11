@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+		<!-- css and scripts for the tap navigaton bar -->
+		<template id="assets_frontend" inherit_id="website.assets_frontend" name="Nav Bar Assets">
+			<xpath expr="." position="inside">
+				<link rel="stylesheet" href='/bp_snippet_tap_navigation/static/src/css/normalize.css' t-ignore="true" />
+				<link rel="stylesheet" href='/bp_snippet_tap_navigation/static/src/css/main.css' t-ignore="true" />
+				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/tab_nav_selector.js"></script>
+				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/modernizr.custom.js"></script>
+				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/tab_nav.js"></script>
+			</xpath>
+		</template>
+
+		<template id="assets_editor" inherit_id="website.assets_editor" name="assets for nav bar snippet">
+			<xpath expr="." position="inside">
+				<script type="text/javascript" src="/bp_snippet_tap_navigation/static/src/js/tab_nav_selector.editor.js"></script>
+			</xpath>
+		</template>
+
+		<template id="nav_bar_snippet" inherit_id="website.snippets" name="Clean Theme snippets">
+			<xpath expr="//div[@id='snippet_structure']" position="inside">
+				<div>
+					<div class="oe_snippet_thumbnail">
+						<img class="oe_snippet_thumbnail_img" src="/bp_snippet_tap_navigation/static/src/img/menu_snippet.jpeg" />
+						<span class="oe_snippet_thumbnail_title">Nav Bar</span>
+					</div>
+					<section class="oe_snippet_body mb32 tabs tabs-style-bar tab-navigation js_navbar">
+						<!-- Indicators -->
+						<div class="container">
+							<div class="row">
+								<div class="">
+									<nav>
+										<ul id="myNav" class="nav nav-tabs" role="tablist">
+											<li class="tab-current active">
+												<a href="#info1" class="no-animate-link text-center" role="tab" data-toggle="tab">
+													<span>
+														<i class="fa fa-home">Info</i>
+													</span>
+												</a>
+											</li>
+											<li>
+												<a href="#info2" class="no-animate-link text-center" role="tab" data-toggle="tab">
+													<span>
+														<i class="fa fa-home">Info2</i>
+													</span>
+												</a>
+											</li>
+										</ul>
+									</nav>
+
+									<!-- content of the tab -->
+
+									<div class="tab-content">
+										<div class="tab-pane content-current oe_structure oe_empty active" id="info1">
+											<section class="oe_dark mt16 mb16">
+												<div class="container">
+													<div class="row">
+														<div class="col-md-12 text-center mt32 mb32">
+															<h2>A Punchy Headline</h2>
+														</div>
+														<div class="col-md-12">
+															<img class="img img-responsive" src="/website/static/src/img/big_picture.png" style="margin: 0 auto;" />
+														</div>
+														<div class="col-md-6 col-md-offset-3 mb16 mt16">
+															<p class="text-center">
+																<b>A Small Subtitle</b>
+															</p>
+															<p class="text-center">Choose a vibrant image and write an
+																inspiring paragraph about it. It does not have to be
+																long, but it should reinforce your image.
+															</p>
+															<p class="text-center">
+																<a href="/page/website.contactus">Contact us »</a>
+															</p>
+														</div>
+													</div>
+												</div>
+											</section>
+
+										</div>
+										<div class="tab-pane oe_structure oe_empty" id="info2">
+											<section class="mb16">
+												<div class="container">
+													<div class="row mt16 mb16">
+														<div class="col-md-4 text-center">
+															<span class="fa fa-suitcase fa-5x"></span>
+															<h3 class="mt8 mb0">First Feature</h3>
+															<div class="text-muted">Tell what's the value for the</div>
+															<div class="text-muted">customer for this feature.</div>
+														</div>
+														<div class="col-md-4 text-center">
+															<span class="fa fa-lock fa-5x"></span>
+															<h3 class="mt8 mb0">Second Feature</h3>
+															<div class="text-muted">Write what the customer would like
+																to know,
+															</div>
+															<div class="text-muted">not what you want to show.</div>
+														</div>
+														<div class="col-md-4 text-center">
+															<span class="fa fa-heart fa-5x"></span>
+															<h3 class="mt8 mb0">Third Feature</h3>
+															<div class="text-muted">A small explanation of this great
+															</div>
+															<div class="text-muted">feature, in clear words.</div>
+														</div>
+													</div>
+												</div>
+											</section>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+			</xpath>
+		</template>
+
+		<template id="nav_bar_snippet_options" inherit_id="website.snippet_options">
+			<xpath expr="//div" position="after">
+				<div data-snippet-option-id='nav_bar_snippet' data-selector=".tab-navigation">
+					<li class="dropdown-submenu">
+						<a tabindex="-1" href="#">Nav bar Style</a>
+						<ul class="dropdown-menu">
+							<li data-value="tabs-style-bar">
+								<a>Style Bar</a>
+							</li>
+							<li data-value="tabs-style-iconbox">
+								<a>Iconbox</a>
+							</li>
+							<li data-value="tabs-style-underline">
+								<a>Underline</a>
+							</li>
+							<li data-value="tabs-style-linetriangle">
+								<a>Line Triangle</a>
+							</li>
+							<li data-value="tabs-style-topline">
+								<a>Topline</a>
+							</li>
+							<li data-value="tabs-style-iconfall">
+								<a>Icon Fall</a>
+							</li>
+							<li data-value="tabs-style-linemove">
+								<a>Line Move</a>
+							</li>
+							<li data-value="tabs-style-line">
+								<a>Line</a>
+							</li>
+							<li data-value="tabs-style-circle">
+								<a>Circle</a>
+							</li>
+							<li data-value="tabs-style-shape">
+								<a>Shape</a>
+							</li>
+							<li data-value="tabs-style-linebox">
+								<a>Line Box</a>
+							</li>
+							<li data-value="tabs-style-flip">
+								<a>Flip</a>
+							</li>
+							<li data-value="tabs-style-fillup">
+								<a>Fill up</a>
+							</li>
+							<li data-value="tabs-style-tzoid">
+								<a>T-Zoid</a>
+							</li>
+							<li data-value="tabs-style-circlefill">
+								<a>Circle Fill</a>
+							</li>
+
+						</ul>
+					</li>
+					<li>
+						<a href="#" class="button js_add_tab">Add Tab</a>
+					</li>
+					<li>
+						<a href="#" class="button js_remove_tab">Remove Tab</a>
+					</li>
+				</div>
+			</xpath>
+		</template>
+
+	</data>
+</openerp>

@@ -1,0 +1,48 @@
+/*****************************/
+/* Top Line */
+/*****************************/
+
+.tabs-style-topline
+  max-width: 1200px
+  nav
+    li
+      border: 1px solid rgba(40,44,42,0.1)
+
+    li:not(:last-child)
+      border-right: none
+
+    li.tab-current
+      border-top-color: #428bca
+      border-bottom: none
+
+    a
+      padding: 0.65rem 0 0.5rem
+      background: rgba(40,44,42,0.05)
+      color: #74777b
+      line-height: 1
+      -webkit-transition: color 0.2s
+      transition: color 0.2s
+
+    a:hover
+      color: #428bca
+    a:focus
+      color: #428bca
+
+
+    li.tab-current
+      a
+        background: none
+        box-shadow: inset 0 3px 0 #428bca
+        color: #428bca
+
+  .fa::before
+    display: block
+    margin: 0
+
+
+    a
+      span
+        text-transform: uppercase
+        letter-spacing: 1px
+        font-weight: 700
+        font-size: 0.5rem

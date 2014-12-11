@@ -1,0 +1,67 @@
+/*****************************/
+/* Icon box */
+/*****************************/
+
+.tabs-style-iconbox
+  nav
+    background: rgba(255,255,255,0.4)
+
+    ul
+      li
+        a
+          overflow: visible
+          padding: 2rem 0
+          line-height: 1
+          -webkit-transition: color 0.2s
+          transition: color 0.2s
+
+          span
+            font-weight: 700
+            font-size: 2rem
+
+      li.tab-current
+        z-index: 100
+
+        a
+          color: #428bca !important
+          background: #fff
+          box-shadow: -1px 0 0 #fff
+
+        a::after
+          position: absolute
+          top: 100%
+          left: 50%
+          margin-left: -10px
+          width: 0
+          height: 0
+          border: solid transparent
+          border-width: 10px
+          border-top-color: #fff
+          content: ''
+          pointer-events: none
+
+      li:first-child::before
+        position: absolute
+        top: 20%
+        z-index: -1
+        width: 1px
+        height: 60%
+        background: rgba(0,0,0,0.07)
+        content: ''
+        right: auto
+        left: 0
+
+      li::after
+        position: absolute
+        top: 20%
+        right: 0
+        z-index: -1
+        width: 1px
+        height: 60%
+        background: rgba(0,0,0,0.07)
+        content: ''
+
+  .fa::before
+    display: block
+    margin: 0 0 0.25rem 0
+

@@ -1,0 +1,111 @@
+/*****************************/
+/* Shape */
+/*****************************/
+
+.tabs-style-shape
+  max-width: 1200px
+  nav
+    ul
+      li
+        margin: 0 3rem
+
+
+      li:first-child
+        margin-left: 0
+
+      li.tab-current
+        z-index: 100
+
+
+    li
+      a:hover
+        background-color: #428bca
+        svg
+          fill: #428bca
+
+      a
+        overflow: visible
+        margin: 0 -3rem 0 0
+        padding: 0
+        color: #fff
+        font-weight: 500
+        /*not sure if this is right for the animation*/
+        display: block
+        overflow: hidden
+        padding: 0.65rem 0
+        background-color: #bdc2c9
+        text-overflow: ellipsis
+        white-space: nowrap
+        svg
+          pointer-events: none
+          position: absolute
+          left: 100%
+          margin: 0
+          width: 3rem
+          height: 100%
+          fill: #bdc2c9
+          use
+            pointer-events: auto
+
+        svg:nth-child(2)
+          right: 100%
+          left: auto
+          -webkit-transform: scale3d(-1,1,1)
+          transform: scale3d(-1,1,1)
+
+
+      li:first-child
+        a
+          padding-left: 2rem
+          border-radius: 30px 0 0 0
+
+    li:last-child
+      a
+        padding-right: 2rem
+        border-radius: 0 30px 0 0
+
+        svg
+          right: 100%
+          left: auto
+          -webkit-transform: scale3d(-1,1,1)
+          transform: scale3d(-1,1,1)
+    li.tab-current
+      a
+        -webkit-transition: none
+        transition: none
+        svg
+          -webkit-transition: none
+          transition: none
+          fill: #fff
+
+
+
+@media screen and (max-width: 58em)
+  .tabs-style-shape
+    nav
+      ul
+        display: block
+        padding-top: 1.5rem
+        li
+          display: block
+          margin: -1.25rem 0 0
+          -webkit-flex: none
+          flex: none
+
+          a
+            margin: 0
+            padding: 1.25rem 0 2rem !important
+            border-radius: 30px 30px 0 0 !important
+            box-shadow: 0 -1px 2px rgba(0,0,0,0.1)
+            line-height: 1
+
+          svg
+            display: none
+
+
+        li:last-child
+          a
+            padding: 1.25rem 0 !important
+
+        li.tab-current
+          z-index: 1

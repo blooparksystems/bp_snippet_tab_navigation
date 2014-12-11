@@ -1,0 +1,55 @@
+/*****************************/
+/* Moving Line */
+/*****************************/
+
+.tabs-style-linemove
+  nav
+    background: #fff
+
+    li:last-child::before
+      position: absolute
+      bottom: 0
+      left: 0
+      width: 100%
+      height: 4px
+      background: #428bca
+      content: ''
+      -webkit-transition: -webkit-transform 0.3s
+      transition: transform 0.3s
+
+/* Move the line */
+
+    li:first-child.tab-current ~ li:last-child::before
+      -webkit-transform: translate3d(-400%,0,0)
+      transform: translate3d(-400%,0,0)
+
+    li:nth-child(2).tab-current ~ li:last-child::before
+      -webkit-transform: translate3d(-300%,0,0)
+      transform: translate3d(-300%,0,0)
+
+
+    li:nth-child(3).tab-current ~ li:last-child::before
+      -webkit-transform: translate3d(-200%,0,0)
+      transform: translate3d(-200%,0,0)
+
+    li:nth-child(4).tab-current ~ li:last-child::before
+        -webkit-transform: translate3d(-100%,0,0)
+        transform: translate3d(-100%,0,0)
+
+    a
+      padding: 1rem 0
+      color: #74777b
+      line-height: 1
+      -webkit-transition: color 0.3s, -webkit-transform 0.3s
+      transition: color 0.3s, transform 0.3s
+
+      span
+        font-weight: 700
+
+    li.tab-current
+      a
+        color: #428bca
+        -webkit-transform: translate3d(0,8px,0)
+        transform: translate3d(0,8px,0)
+
+

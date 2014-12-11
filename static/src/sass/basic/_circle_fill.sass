@@ -1,0 +1,60 @@
+/*****************************/
+/* Circle fill */
+/*****************************/
+
+.tabs-style-circlefill
+  border: 1px solid #428bca
+  nav
+    ul
+      li
+        overflow: hidden
+        border-right: 1px solid #428bca
+
+
+    li
+      a
+        padding: 1.5rem 0
+        color: #fff
+        font-size: 2rem
+    li:first-child
+      border-left: none
+    li:last-child
+      border: none
+    li::before
+      position: absolute
+      top: 50%
+      left: 50%
+      margin: -40px 0 0 -40px
+      width: 80px
+      height: 80px
+      border: 1px solid #428bca
+      border-radius: 50%
+      background: #428bca
+      content: ''
+      -webkit-transition: -webkit-transform 0.3s
+      transition: transform 0.3s
+
+
+    li.tab-current::before
+      -webkit-transform: scale3d(2.5,2.5,1)
+      transform: scale3d(2.5,2.5,1)
+
+    li.tab-current
+      a
+        color: #fff
+
+
+    a
+      -webkit-transition: color 0.3s
+      transition: color 0.3s
+
+
+
+  .fa::before
+    display: block
+    margin: 0
+    pointer-events: none
+
+
+  .content-wrap
+    border-top: 1px solid #428bca
