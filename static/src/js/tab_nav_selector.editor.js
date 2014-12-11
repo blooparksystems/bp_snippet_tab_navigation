@@ -65,7 +65,7 @@
             console.log(this.id);
             console.log(('.tab-pane #'+this.id+''));
             console.log('##on add##');
-            $('nav #myNav').append('<li><a data-cke-saved-href=#'+this.id+' href=#'+this.id+' class="no-animate-link text-center" role="tab" data-toggle="tab"><span><i class="fa fa-home">Info_new</i></span></li>').removeClass('active');
+            $('nav #myNav').append('<li><a data-cke-saved-href=#'+this.id+' href=#'+this.id+' class="no-animate-link text-center" role="tab" data-toggle="tab"><span><i class="fa fa-home" />Info_new</span></li>').removeClass('active');
             this.rebind_event();
             [].slice.call(document.querySelectorAll('.tabs')).forEach(function (el) {
                 new tab_nav_selector(el);

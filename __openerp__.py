@@ -1,28 +1,30 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "bp_8_0_snippet_tap_navigation",
+    'name': "Tap Navigation Snippet",
 
     'summary': """
-    Tap navigation snipped""",
+    Tap Navigation Snippet for odoo""",
 
     'description': """
-    Tap navigation snipped""",
+    Tap Navigation Snippet for odoo""",
 
-    'author': "BLOOPARK SYSTEMS GMBH. & CO. KG",
+    'author': "bloopark systems GmbH & Co. KG",
     'website': "http://www.bloopark.de",
 
-    'category': 'snipped',
-    'version': '0.1',
+    'category': 'Snippet',
+    'version': '1.0',
 
-
-    # any module necessary for this one to work correctly
     'depends': [
         'base',
         'website'
     ],
-
-    # always loaded
     'data': [
         'views/snippets.xml'
+    ],
+
+    'demo': [
+    ],
+
+    'tests': [
     ],
 }
